@@ -5,17 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>welcome</title>
+    <style>
+        a{
+            color:black;
+            text-decoration:none;
+        }
+
+        h1{
+            font-size:45pt;
+            text-align:center;
+            
+        }
+
+        .saw{
+            color:blue;
+        }
+
+        #active{
+            color:red;
+        }
+
+    </style>
+
 </head>
 <body>
     <h1><a href="index.html">WEB</h1>
 
     <ol>
-        <li><a href="1.html"> HTML </a></li>
-        <li><a href="2.html">CSS </a></li>
-        <li> <a href="3.html">JavaScript</a></li>
+        <li><a href="1.html" class= "saw"> HTML </a></li>
+        <li><a href="2.html" class="saw" id="active">CSS </a></li>
+        <li> <a href="3.html" class="active">JavaScript</a></li>
     </ol>
+    <!--선택자,selector,, head 에 있는 a의 의미
+        a태그 장식없애기 text-decoration:none; 으로 선언
+        
+        그리고 하나의 디스크립션이 시작하고
+        끝나는것을 구분하기 위해 ; 를 넣으니까 꼭 ; 넣어주기.
 
+    declaration선언. color:black; 컬러를 선언한다.
+-->
+    <!--css를 사용하는 방법(1번) head에 <style></style>-->
+    <!--css사용 방법(2번) 속성 태그내에, style="color:red;text-decoration:none;"
+    이런식으로 style속성태그내 style안에 여러개 선언 가능함.-->
+<!--
+    <h1><a href="index.html"><font color="red">WEB</font></h1>
 
+        <ol>
+            <li><a href="1.html"> <font color="red">HTML</font> </a></li>
+            <li><a href="2.html"><font color="red">CSS </font></a></li>
+            <li> <a href="3.html"><font color="red">JavaScript</font></a></li>
+        </ol>
+
+-->
         <H2>WEB</H2>
 
     <p>
