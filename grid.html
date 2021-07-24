@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    #grid{
+           border:5px solid pink;
+           display:grid;
+           grid-template-columns: 150px 1fr;
+           /*첫번째 컬럼은 150px 를갖고, 나머지컬럼은 나머지를쓴다
+           첫번째 컬럼인 navigation은 150px, article은 나머지임
+           만약 1fr 1fr은, 각각 반씩 가질 수 있게 되는거고
+           만약 2fr 1fr은 앞에건 2만큼 뒤에껀 1만큼*/
+
+       }
+
+    div{
+        border:5px solid gray;
+    }
+    </style>
+</head>
+<body>
+    <!--div는 기본적으로 block레빌로 화면전체
+   span은 기본적으로 inline element -->
+   <!--나란히 놓기위해 grid 사용예정-->
+   <div id="grid"> 
+   <div>NAVIGATION</div>
+    <div>ARTICLE</div> 
+    </div>
+</body>
+</html>
