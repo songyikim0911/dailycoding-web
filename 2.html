@@ -7,15 +7,27 @@
     <title>WEB 1 - CSS</title>
 
     <style>
+        #grid{
+            display:grid;
+            grid-template-columns: 150px 1fr;
+/*grid안에 현재자식이 2개임
+
+<ol>뭉치1, <div>뭉치2,
+    뭉치1은 150px, 뭉치 2는 1fr로 표현한다는것을
+    grid-template-colums 로 지정해준것이다.
+    컬럼은 열. 로우는 행. 
+    첫번째 컬럼=열=ol임...왼쪽에 있는 열
+    두번쨰 컬럼은...오른족에 있는 div..*/
+
+        }
+        #grid ol{/*ol 중에 조상 id grid를 가진 ol*/
+            padding-left:30px;
+        }
+        #article{
+            padding:25px;
+        }
         body{
             margin:0;
-        }
-        #active{
-            color:red;
-        }
-
-        .saw{
-            color:gray;
         }
 
         a{
@@ -42,15 +54,16 @@
 
 </head>
 <body>
-    <h1><a href="index.html">WEB</a></h1>
 
+    <h1><a href="index.html">WEB</a></h1>
+    <div id="grid">
     <ol>
-        <li><a href="1.html" class="saw"> HTML </a></li>
-        <li><a href="2.html" class="saw" id="active">CSS </a></li>
+        <li><a href="1.html" > HTML </a></li>
+        <li><a href="2.html"  >CSS </a></li>
         <li> <a href="3.html">JavaScript</a></li>
     </ol>
 
-<div>
+<div id="article">
         <H2>CSS</H2>
 
     <p>
@@ -69,6 +82,6 @@
    
     </p>
     </div>
-
+    </div>
     </body>
 </html>
